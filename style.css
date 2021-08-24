@@ -1,0 +1,37 @@
+*{/*pega todos os elementos*/
+    margin: 0;/*tamanho da margem*/
+    padding: 0;/*preenchimento na altura*/
+    /*resetando todas as propriedades padrões do navegador*/
+    box-sizing: border-box;/*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin*/
+}
+html, body{
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+}
+.clear{
+    clear: both;/*É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito.*/
+}
+.container{
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    max-width: 1280px;/*largura máxima do elemento*/
+    margin: 20px auto;/*margem cima/baixo de 20, auto centraliza a margem*/
+    padding: 30px 0;/*preenchimento na altura, 30 cima/baixo 0 direita/esquerda*/
+    border: 3px solid rgb(220,220,220);/*tamanho, forma e cor da bordar*/
+}
+.img-wrapper{
+    width: 33.3%;/*determina a largura da área de conteúdo de um elemento*/
+    float: left;/*O elemento flutua à esquerda de seu contêiner*/
+    padding-top: calc(33.3% / 1.6);/*preenchimento na altura do elemento superior*/
+    background-color: white;/*cor de fundo*/
+    position: relative;/*está posicionado em relação à sua posição normal.*/
+    border: 4px solid white;/*tamanho, forma e cor da bordar*/
+}
+.img{
+    position: absolute;/*está posicionado em relação à sua posição normal.*/
+    left: 0;/*esquerda*/
+    top: 0;/*superior*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+    background-position: center;/*posicionar a imagem no centro*/
+    background-size: contain;/*especifica o tamanho da imagem ao fundo, o tamanho da box*/
+    background-repeat: no-repeat;/*não repetir a imagem*/
+}
